@@ -2,7 +2,7 @@ import axios from 'axios';
 import { Task, TaskFormData } from '../types/Task';
 
 const BASE_URL = 'https://reactexambackend.onrender.com/missions/';
-const API_KEY = import .meta.env.API_KEY;
+const API_KEY = import.meta.env.API_KEY;
 export const fetchTasks = async (): Promise<Task[]> => {
   const response = await axios.get(`${BASE_URL}${API_KEY}`);
   return response.data;

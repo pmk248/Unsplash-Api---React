@@ -1,14 +1,14 @@
 export interface Task {
-    id: string;
+    _id: string;
     name: string;
     status: "Pending" | "In Progress" | "Completed";
-    priority: "Low" | "Medium" | "High";
+    priority: string;
     description: string;
 }
 
 export interface TaskFormData {
     name: string;
     status: "Pending";
-    priority: "Low";
+    priority: string;
     description: string;
 }
